@@ -74,6 +74,7 @@ window.onload = function () {
   document.getElementById("draw").addEventListener("click", randomCard);
 
   //----------------Sorting Card--------------------
+
   function sortingCards() {
     if (currentCards.length === 0) return;
 
