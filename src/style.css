@@ -1,5 +1,115 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 body{
-    background: white;
+    background: rgb(167, 252, 124);
+
+}
+#top-page {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(89, 200, 33);
+}
+#container {
+ 
+}
+
+#middle-page {
+    display: flex;
+    padding: 5%;
+    
+}
+
+#card-container {
+
+ display: flex;          /* put cards side by side */
+  flex-wrap: wrap;        /* allow multiple rows */
+  gap: 10px;              /* space between cards */
+  margin-top: 20px;
+}
+
+.cardGeneral {
+  width: 80px;
+  height: 120px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;          /* allows absolute positioning for children */
+  padding: 5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  font-family: sans-serif;
+}
+
+.cardTop {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-weight: bold;
+}
+
+.cardBottom {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-weight: bold;
+  transform: rotate(180deg);  /* optional: upside down like real cards */
+}
+
+.cardCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+
+
+#bottom-page {
+    display: flex;
+    padding: 5%;
+    
+}
+
+#sorted-card-container {
+
+ display: flex;          /* put cards side by side */
+  flex-wrap: wrap;        /* allow multiple rows */
+  gap: 10px;              /* space between cards */
+  margin-top: 20px;
+}
+
+.sortedCardGeneral {
+  width: 80px;
+  height: 120px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;          /* allows absolute positioning for children */
+  padding: 5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  font-family: sans-serif;
+}
+
+.sortedCardTop {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-weight: bold;
+}
+
+.sortedCardBottom {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-weight: bold;
+  transform: rotate(180deg);  /* optional: upside down like real cards */
+}
+
+.sortedCardCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
 }
